@@ -11,31 +11,44 @@ import _01_array_list_visualizer.data.ArrayList;
 public class VisualArrayLists implements ActionListener {
 	Timer timer;
 	JFrame frame = new JFrame();
-	
+
 	ArrayList<String> list = new ArrayList<String>();
 
 	public void addThingsToList() {
 		// 1. Add a bunch of items to our list (4 or 5 should be enough!)
-		
+		list.add("clock");
+		list.add("time");
+		list.add("stopwatch");
+		list.add("alarm");
 		// 2. Set one item in our list to be something different
-		
-		// 3. Remove something from our list
-		
-		// 4. Print the size of our list
-		
-		// 5. Check if our list contains a specific thing of your choice
-		//	  and print whether it is in the list or not.
-		
-		// 6. Get a specific item from our list and print it out
-		
-		// 7. Clear our list of all items
-		
-		// 8. Print the size of our list again
+		for (int i = 0; list.size() > i; i++) {
+			String a=list.get(i);
+			if(a.contains("r")){
+	a="hi";
+	System.out.println(a);
+			}
+		}
+	// 3. Remove something from our list
+	for (int i = 0;list.size()>i; i--) {
+		if(i%100==0) {
+			System.out.println(i);
+		}}
 	}
+	// 4. Print the size of our list
+//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
+	// 5. Check if our list contains a specific thing of your choice
+	// and print whether it is in the list or not.
+
+	// 6. Get a specific item from our list and print it out
+
+	// 7. Clear our list of all items
+
+	// 8. Print the size of our list again
 	
-	
+
 	/*
-	 * ------------DONT CHANGE ANYTHING BELOW THIS LINE-----------------------------------------
+	 * ------------DONT CHANGE ANYTHING BELOW THIS
+	 * LINE-----------------------------------------
 	 */
 	public static void main(String[] args) {
 		VisualArrayLists vcc = new VisualArrayLists();
