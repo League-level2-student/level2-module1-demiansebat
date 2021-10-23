@@ -36,8 +36,8 @@ public class GuestBook implements ActionListener {
 		frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
 		frame.pack();
 		button.addActionListener(this);
+		clickything.addActionListener(this);
 	}
-	//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
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		JButton clicked = (JButton) e.getSource();
@@ -45,11 +45,15 @@ public class GuestBook implements ActionListener {
 			String names = JOptionPane.showInputDialog("Enter a Name!");
 			list.add(names);
 		}
-		if(clicked=clickything) {
+		if(clicked==clickything) {
+			String namelist="";
 		for (int i = 0; list.size() > i; i++) {
-
+		namelist += "Guest#"+i+": ";
+		namelist += list.get(i)+"\n";
 		// TODO Auto-generated method stub
 
-	}}}
-
+	}
+		JOptionPane.showMessageDialog(null, namelist);
+		}}
+//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
 }
